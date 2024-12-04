@@ -20,4 +20,9 @@ func main() {
 		fmt.Printf("Error: %v", err)
 	}
 	fmt.Printf("%v\n", studentsInterface)
+
+	avg := calcAvgGradeStruct(*students)
+	avgInterface := calcAvgGradeInterfacePrecise(studentsInterface)
+	fmt.Printf("%v\n", avg)
+	fmt.Printf("%v\n", avgInterface)
 }
